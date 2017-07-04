@@ -2,7 +2,7 @@
 
 namespace TestApp.Echo.Core
 {
-    public class EchoService : IEchoService
+    public class EchoService : IEchoService, IService
     {
         private readonly IEchoPresenter _presenter;
         private readonly ILogger _logger;

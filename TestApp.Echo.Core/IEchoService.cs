@@ -1,8 +1,6 @@
-﻿using TestApp.Core;
-
-namespace TestApp.Echo.Core
+﻿namespace TestApp.Echo.Core
 {
-    public interface IEchoService : IService
+    public interface IEchoService
     {
         void Echo(string value);
     }

@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApp.Console", "TestApp.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApp.Echo.Core", "TestApp.Echo.Core\TestApp.Echo.Core.csproj", "{F5BD4EBB-5CB6-480E-8E52-34E2364BDBFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp.Echo.Console", "TestApp.Echo.Console\TestApp.Echo.Console.csproj", "{517E5570-EE51-43B7-81DA-9F14C74E12E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApp.Echo.Console", "TestApp.Echo.Console\TestApp.Echo.Console.csproj", "{517E5570-EE51-43B7-81DA-9F14C74E12E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp.Echo.Wpf", "TestApp.Echo.Wpf\TestApp.Echo.Wpf.csproj", "{230C4684-97A1-4833-85C4-6F7B85B19CBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -131,6 +133,22 @@ Global
 		{517E5570-EE51-43B7-81DA-9F14C74E12E1}.Release|x64.Build.0 = Release|Any CPU
 		{517E5570-EE51-43B7-81DA-9F14C74E12E1}.Release|x86.ActiveCfg = Release|Any CPU
 		{517E5570-EE51-43B7-81DA-9F14C74E12E1}.Release|x86.Build.0 = Release|Any CPU
+		{230C4684-97A1-4833-85C4-6F7B85B19CBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{230C4684-97A1-4833-85C4-6F7B85B19CBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{230C4684-97A1-4833-85C4-6F7B85B19CBA}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{230C4684-97A1-4833-85C4-6F7B85B19CBA}.Debug|ARM.Build.0 = Debug|Any CPU
+		{230C4684-97A1-4833-85C4-6F7B85B19CBA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{230C4684-97A1-4833-85C4-6F7B85B19CBA}.Debug|x64.Build.0 = Debug|Any CPU
+		{230C4684-97A1-4833-85C4-6F7B85B19CBA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{230C4684-97A1-4833-85C4-6F7B85B19CBA}.Debug|x86.Build.0 = Debug|Any CPU
+		{230C4684-97A1-4833-85C4-6F7B85B19CBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{230C4684-97A1-4833-85C4-6F7B85B19CBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{230C4684-97A1-4833-85C4-6F7B85B19CBA}.Release|ARM.ActiveCfg = Release|Any CPU
+		{230C4684-97A1-4833-85C4-6F7B85B19CBA}.Release|ARM.Build.0 = Release|Any CPU
+		{230C4684-97A1-4833-85C4-6F7B85B19CBA}.Release|x64.ActiveCfg = Release|Any CPU
+		{230C4684-97A1-4833-85C4-6F7B85B19CBA}.Release|x64.Build.0 = Release|Any CPU
+		{230C4684-97A1-4833-85C4-6F7B85B19CBA}.Release|x86.ActiveCfg = Release|Any CPU
+		{230C4684-97A1-4833-85C4-6F7B85B19CBA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

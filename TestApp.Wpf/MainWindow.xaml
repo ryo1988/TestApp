@@ -10,5 +10,9 @@
         Height="350"
         mvvm:ViewModelLocator.AutoWireViewModel="True"
         mc:Ignorable="d">
-    <ContentControl mvvm:RegionManager.RegionName="ContentRegion" />
+    <ContentControl HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    HorizontalContentAlignment="Stretch"
+                    VerticalContentAlignment="Stretch"
+                    mvvm:RegionManager.RegionName="ContentRegion" />
 </Window>

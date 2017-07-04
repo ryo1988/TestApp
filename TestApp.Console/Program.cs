@@ -19,7 +19,7 @@ namespace TestApp.Console
             var configurationBuilder = new ConfigurationBuilder();
             var currentDirectory = Directory.GetCurrentDirectory();
             configurationBuilder.SetBasePath(currentDirectory);
-            configurationBuilder.AddJsonFile("App.config");
+            configurationBuilder.AddXmlFile("Module.config");
             var module = new ConfigurationModule(configurationBuilder.Build());
             var builder = new ContainerBuilder();
             builder.RegisterModule(module);
