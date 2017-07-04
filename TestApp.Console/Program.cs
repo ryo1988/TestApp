@@ -34,19 +34,26 @@ namespace TestApp.Console
 
         static void LoadAssembly(string filePath)
         {
-            var assemblyName = AssemblyLoadContext.GetAssemblyName(filePath);
-            var dependencyContext = DependencyContext.Default;
-            var ressource = dependencyContext.CompileLibraries.FirstOrDefault(r => r.Name.ToLower().Contains(assemblyName.Name.ToLower()));
-
-            if(ressource != null)
+            try
             {
-                Assembly.Load(new AssemblyName(ressource.Name));
-                return;
+                var assemblyName = AssemblyLoadContext.GetAssemblyName(filePath);
+                var dependencyContext = DependencyContext.Default;
+                var ressource = dependencyContext.CompileLibraries.FirstOrDefault(r => r.Name.ToLower().Contains(assemblyName.Name.ToLower()));
+
+                if(ressource != null)
+                {
+                    Assembly.Load(new AssemblyName(ressource.Name));
+                    return;
+                }
+
+                if(File.Exists(filePath))
+                {
+                    AssemblyLoadContext.Default.LoadFromAssemblyPath(filePath);
+                }
             }
-
-            if(File.Exists(filePath))
+            catch
             {
-                AssemblyLoadContext.Default.LoadFromAssemblyPath(filePath);
+                // ignored
             }
         }
 
